@@ -5,11 +5,15 @@
 This is an application that helps users generate and store passwords for their social accounts, The password locker runs on the terminal and uses short codes to navigate through it.
 ## Setup/Installation Requirements
 * This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
+* clone this repository
+
+* have python3.6 on your device
+
+* Run application in your terminal using ./run.py
+
+* Test application using $ python3.7 user_test.py
+
+* Once you run the App follow the instructions on the terminal
 ## Known Bugs
 No any bugs
 ## Technologies Used
@@ -18,5 +22,5 @@ Python
 * kuyamaxmillan@gmail.com
 * moringa school
 ### License
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-Copyright (c) {year} **{List of contributors or company name}**
+*{License(mit)}*
+Copyright (c) 2021 **Maxmillan Kuya**
