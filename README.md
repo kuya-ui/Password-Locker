@@ -24,7 +24,9 @@ Python
 
 2. lg - logs in
 
-3. ex - Exit the ap The user will be met with the following commands while signing in:
+3. ex - Exit the app 
+
+While signing in, the user will see the following commands,
 
 4. ap - Add password
 
