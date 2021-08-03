@@ -19,20 +19,7 @@ No any bugs
 ## Technologies Used
 Python
 
-## BDD
-1. cu - Creates a new account
 
-2. lg - logs in
-
-3. ex - Exit the app 
-
-While signing in, the user will see the following commands,
-
-4. ap - Add password
-
-5. cp - Copy password to clipboard
-
-6. lo - Log out
 ## Support and contact details
 * kuyamaxmillan@gmail.com
 * moringa school
