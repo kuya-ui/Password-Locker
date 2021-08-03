@@ -14,3 +14,16 @@ class TestCredential(unittest.TestCase):
         """
 
         self.new_password = Credential("max")
+
+    def test_init(self):
+
+        """
+        used to test if the objects have been initialized properly
+        """
+
+        self.assertEqual(self.new_password.credential_detail,"max")
+
+
+
+if __name__ == '__main__':
+    unittest.main()
