@@ -62,3 +62,19 @@ def main():
     print('{:_^20}'.format('login'))
 
     print('\n')
+
+    print("Please identify yourself using your locker USERNAME")
+
+    user_name = input().upper()
+
+    print(f"Hello {user_name}, welcome to your password manager, how can we help you today")
+
+    print('\n')
+
+    while True:
+
+        list =('''
+        2-Display accounts
+        3-Find accounts
+        4-Exit the locker\n''')
+        print(list)
