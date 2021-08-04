@@ -75,6 +75,7 @@ def main():
     while True:
 
         list =('''
+        1-Register a new account
         2-Display accounts
         3-Find accounts
         4-Exit the locker\n''')
@@ -100,17 +101,17 @@ def main():
             username = input()
 
             print('\n')
-            
+
             print("password")
             password = input()
-            
+
 
             print('\n')
-            
+
             print("confirm_password")
             confirm_password = input ()
-            
-            
+
+
             print('\n')
 
 
