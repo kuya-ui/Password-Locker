@@ -1,3 +1,4 @@
+# !/usr/bin/env python3.6
 from user import User
 import getpass
 import random
@@ -15,7 +16,7 @@ def create_account(account_name,username,password,confirm_password):
     return new_user
 
 def save_details(user):
-    
+
     """
     function to save save_details
     """
@@ -99,17 +100,17 @@ def main():
             username = input()
 
             print('\n')
-
+            
             print("password")
             password = input()
-
+            
 
             print('\n')
-
+            
             print("confirm_password")
             confirm_password = input ()
-
-
+            
+            
             print('\n')
 
 
@@ -120,7 +121,8 @@ def main():
             ans = input().lower()
 
             if ans == 'yes':
-                 genpas = print(generatePassword(10))
+
+                genpas = print(generatePassword(10))
 
                 save_details(create_account(account_name,username,password,confirm_password))
 
@@ -140,3 +142,94 @@ def main():
                 print("*********")
 
                 save_details(create_account(account_name,username,password,confirm_password))
+
+                print ('\n')
+
+                print(dash)
+
+                print(f"Hey {user_name}")
+                print(f"Your account name is {account_name}.com")
+                print(f"Your account username is {username}")
+                print("passwords encripted but can be viewed using option 2 / 3")
+
+                print(dash)
+
+                print ('\n')
+
+                print(f"{user_name} what else do you want to do?")
+
+        elif short_code =='2':
+
+
+            if display_all_details():
+
+                print(f"{user_name} here is a list of all your saved accounts")
+
+                print('\n')
+
+                for user in display_all_details():
+
+                    print(dash)
+
+                    print(f"Account is {user.account_name}.com")
+                    print(f"Account username is {user.username}")
+                    print(f"The account's password is {user.password} dont give out passwords")
+
+                    print(dash)
+
+                    print('\n')
+
+                    print(f"{user_name} what else do you want to do?")
+
+            else:
+
+                print('\n')
+
+                print(f" {user_name} You dont seem to have any contacts saved yet")
+
+                print('\n')
+
+                print(f"{user_name} what else do you want to do?")
+
+        elif short_code == '3':
+
+            print(f"{user_name} Enter a username you want to search for")
+
+            search_username = input()
+
+
+            if check_existing_user(search_username):
+
+                search_username = find_user(search_username)
+
+                print(dash)
+
+                print(f"Account is {search_username.account_name}.com")
+                print(f"Account username is {search_username.username}")
+                print(f"Account password is {search_username.password} dont give out passwords")
+
+                print(dash)
+
+                print(f"{user_name} what else do you want to do?")
+
+            else:
+                print(f"{user_name} That account does not exist")
+
+                print(f"{user_name} what else do you want to do?")
+
+        elif short_code == "4":
+
+            print("Bye .......")
+
+            break
+
+        else:
+            print("I really didn't get that. Please use the correct code")
+
+            print(f"{user_name} what else do you want to do?")
+
+
+
+if __name__ == '__main__':
+
+    main()
