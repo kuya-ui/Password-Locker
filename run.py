@@ -120,3 +120,23 @@ def main():
             ans = input().lower()
 
             if ans == 'yes':
+                 genpas = print(generatePassword(10))
+
+                save_details(create_account(account_name,username,password,confirm_password))
+
+                print ('\n')
+
+
+                print(f"{user_name} {account_name} account of {username} created and password saved")
+
+                print ('\n')
+
+
+            elif ans == 'no':
+                password = getpass.getpass('password:')
+                print("*********")
+
+                confirm_password = getpass.getpass('confirm password:')
+                print("*********")
+
+                save_details(create_account(account_name,username,password,confirm_password))
