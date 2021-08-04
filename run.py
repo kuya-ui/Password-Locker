@@ -101,3 +101,22 @@ def main():
             print('\n')
 
             print("password")
+            password = input()
+
+
+            print('\n')
+
+            print("confirm_password")
+            confirm_password = input ()
+
+
+            print('\n')
+
+
+            print("Do you want a randomly generated password?")
+
+
+            print("yes", "no")
+            ans = input().lower()
+
+            if ans == 'yes':
