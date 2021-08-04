@@ -78,3 +78,26 @@ def main():
         3-Find accounts
         4-Exit the locker\n''')
         print(list)
+
+
+
+        short_code = input().lower()
+
+        if short_code == '1':
+
+            print(f"{user_name} Please FILL IN the following")
+
+            print("-"*10)
+
+            print ("Account name")
+
+            account_name = input()
+
+            print('\n')
+
+            print("Username")
+            username = input()
+
+            print('\n')
+
+            print("password")
